@@ -15,3 +15,14 @@ const hideModal = function () {
   modal.style.display = 'none'
   overLay.style.display = 'none'
 }
+
+for (let i = 0; i < showModalBnts.length; i++){
+  showModalBnts[i].addEventListener('click', showModal)
+  closeModal.addEventListener('click', hideModal)
+  overLay.addEventListener('click', hideModal)
+
+  // document.addEventListener('keydown', (e) => {
+  //   if(e.key === 'Escape' && !modal.classList.contains('none'))
+  //   hideModal()
+  // })
+}
